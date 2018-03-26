@@ -1,6 +1,5 @@
-
+package com.company;
 public class Card {
-
 
 	private String suit;
 	private String rank;
@@ -30,11 +29,7 @@ public class Card {
 
 	public boolean matches(Card otherCard) {
 
-        if (this.pointValue() + otherCard.pointValue == 11){
-            return true;
-        }else {
-            return false;
-        }
+        return this.pointValue + otherCard.pointValue == 11;
 	}
 
 	@Override
